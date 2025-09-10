@@ -1,0 +1,57 @@
+/* Revolution Slider Styles */
+/* Placeholder for Revolution Slider CSS */
+
+#rs-demo-id {}
+
+.rev_slider_wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.rev_slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.rev_slider ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rev_slider li {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.rev_slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Slider Navigation */
+.tp-bullets {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.tp-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tp-bullet.selected {
+    background: #1b75b1;
+}

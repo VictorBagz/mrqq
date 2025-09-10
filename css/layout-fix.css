@@ -1,0 +1,171 @@
+/* Layout Fix - Ensure Full Viewport Width */
+
+/* CRITICAL: Override all width restrictions to match navigation bar behavior */
+
+/* Remove all max-width constraints on main layout containers */
+html,
+body,
+#Wrapper,
+#Content,
+.content_wrapper,
+.sections_group,
+.mfn-builder-content,
+.mfn-default-content-buider,
+.entry-content {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Override BeTheme section wrappers */
+.section_wrapper,
+.container,
+.wrap {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Prevent horizontal overflow */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure sections fill full width */
+section,
+.section,
+.mcb-section {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Individual content containers can have proper max-widths */
+.mobile-services-container,
+.our-works-container,
+.top-picks-container,
+.videos-container,
+.footer-content,
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: auto;
+}
+
+/* Override WordPress/BeTheme layout restrictions */
+@media screen and (min-width: 1240px) {
+    #Wrapper,
+    .with_aside .content_wrapper,
+    .content_wrapper,
+    #Content,
+    .sections_group {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    
+    .section_wrapper,
+    .container {
+        max-width: none !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+}
+
+/* Mobile and tablet full width */
+@media screen and (max-width: 1239px) {
+    #Wrapper,
+    #Content,
+    .content_wrapper,
+    .sections_group,
+    .section_wrapper,
+    .container {
+        max-width: none !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+/* Force override any inline styles */
+#Wrapper[style*="max-width"],
+#Content[style*="max-width"],
+.content_wrapper[style*="max-width"],
+.sections_group[style*="max-width"] {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+/* Ensure no right margins are applied */
+* {
+    margin-right: 0 !important;
+}
+
+/* Re-apply necessary margins only where needed */
+.mobile-services-container > *,
+.our-works-container > *,
+.top-picks-container > *,
+.videos-container > *,
+.footer-content > * {
+    margin-right: initial;
+}
+
+/* Navigation should remain full width (already working) */
+.premium-navigation {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/* ===== HERO SECTION NAVIGATION SPACING FIX ===== */
+
+/* Hero section starts exactly where navigation ends */
+.mobile-hero-section {
+    margin-top: 70px !important; /* Default navigation height */
+}
+
+/* Responsive navigation spacing adjustments - exact heights */
+@media screen and (max-width: 479px) {
+    .mobile-hero-section {
+        margin-top: 60px !important; /* Mobile navigation height */
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .mobile-hero-section {
+        margin-top: 60px !important; /* Mobile landscape navigation height */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .mobile-hero-section {
+        margin-top: 70px !important; /* Tablet navigation height */
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .mobile-hero-section {
+        margin-top: 80px !important; /* Desktop navigation height */
+    }
+}
+
+/* Landscape orientation fix */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    .mobile-hero-section {
+        margin-top: 0 !important;
+    }
+}

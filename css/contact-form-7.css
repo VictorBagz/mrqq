@@ -1,0 +1,36 @@
+/* Contact Form 7 Styles */
+/* Placeholder for Contact Form 7 plugin styles */
+
+.wpcf7 {
+    margin-bottom: 1em;
+}
+
+.wpcf7-form {
+    display: block;
+}
+
+.wpcf7-form p {
+    margin-bottom: 1em;
+}
+
+.wpcf7-text,
+.wpcf7-email,
+.wpcf7-textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.wpcf7-submit {
+    background: #1b75b1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wpcf7-submit:hover {
+    background: #1c6ea5;
+}

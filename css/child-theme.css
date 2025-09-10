@@ -1,0 +1,10 @@
+/* Child Theme Styles */
+/* Styles specific to the BeTheme child theme */
+
+/* Import parent theme styles */
+@import url('../css/betheme.css');
+
+/* Child theme customizations */
+.custom-override {
+    /* Add any child theme specific styles here */
+}

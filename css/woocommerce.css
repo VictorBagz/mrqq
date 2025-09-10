@@ -1,0 +1,71 @@
+/* WooCommerce Styles */
+/* Placeholder for WooCommerce plugin styles */
+
+.woocommerce {
+    margin-bottom: 2em;
+}
+
+.woocommerce form .form-row .required {
+    visibility: visible;
+}
+
+.woocommerce ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+}
+
+.woocommerce ul.products li.product {
+    flex: 1 1 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.woocommerce ul.products li.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.woocommerce ul.products li.product .price {
+    font-weight: bold;
+    color: #1b75b1;
+}
+
+.woocommerce .product div.entry-summary .price {
+    color: #1b75b1;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.woocommerce span.onsale {
+    background: #1b75b1;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.woocommerce .star-rating {
+    color: #1b75b1;
+}
+
+.woocommerce .button,
+.woocommerce button,
+.woocommerce input[type="submit"] {
+    background: #1b75b1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.woocommerce .button:hover,
+.woocommerce button:hover,
+.woocommerce input[type="submit"]:hover {
+    background: #1c6ea5;
+}

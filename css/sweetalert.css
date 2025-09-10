@@ -1,0 +1,22 @@
+/* SweetAlert CSS */
+/* Placeholder for SweetAlert CSS - download from https://sweetalert.js.org/ */
+
+.swal-overlay {
+    background-color: rgba(0,0,0,.4);
+}
+
+.swal-modal {
+    width: 478px;
+    background-color: #ffffff;
+    border: 3px solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+}
+
+.swal-text {
+    color: #61534e;
+}
+
+.swal-button {
+    background-color: #7cd1f9 !important;
+}

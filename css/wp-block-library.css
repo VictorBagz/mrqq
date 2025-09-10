@@ -1,0 +1,12 @@
+/* WordPress Block Library Styles */
+/* This file would contain the actual WordPress block library CSS */
+/* For development purposes, you can link to the WordPress CDN or download the actual file */
+
+/* Placeholder styles */
+.wp-block {
+    margin-bottom: 1em;
+}
+
+.wp-block-group {
+    margin-bottom: 1.5em;
+}

@@ -1,0 +1,21 @@
+/* Font Awesome Icons */
+/* Placeholder for Font Awesome CSS - download from https://fontawesome.com/ */
+
+.icon-facebook::before { content: "📘"; }
+.icon-instagram::before { content: "📷"; }
+.icon-youtube-play::before { content: "📺"; }
+.icon-tiktok::before { content: "🎵"; }
+.icon-mail::before { content: "📧"; }
+.icon-search::before { content: "🔍"; }
+.icon-menu-fine::before { content: "☰"; }
+.icon-bag-fine::before { content: "🛍️"; }
+.fas.fa-arrow-down::before { content: "⬇️"; }
+
+/* Generic icon styles */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: none;
+}

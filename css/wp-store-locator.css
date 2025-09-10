@@ -1,0 +1,27 @@
+/* WP Store Locator Styles */
+/* Placeholder for WP Store Locator plugin styles */
+
+.wpsl-store-locator {
+    margin-bottom: 2em;
+}
+
+.wpsl-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.wpsl-search {
+    background: #1b75b1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wpsl-search:hover {
+    background: #1c6ea5;
+}

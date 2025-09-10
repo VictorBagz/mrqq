@@ -1,0 +1,27 @@
+/* jPlayer Blue Monday Theme */
+/* Placeholder for jPlayer CSS */
+
+.jp-audio, .jp-video {
+    position: relative;
+    background: #000;
+    border-radius: 4px;
+}
+
+.jp-controls {
+    padding: 10px;
+    text-align: center;
+}
+
+.jp-play, .jp-pause {
+    background: #1b75b1;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.jp-play:hover, .jp-pause:hover {
+    background: #1c6ea5;
+}
