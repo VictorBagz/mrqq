@@ -110,19 +110,8 @@ section,
     width: 100% !important;
 }
 
-/* Ensure no right margins are applied */
-* {
-    margin-right: 0 !important;
-}
-
-/* Re-apply necessary margins only where needed */
-.mobile-services-container > *,
-.our-works-container > *,
-.top-picks-container > *,
-.videos-container > *,
-.footer-content > * {
-    margin-right: initial;
-}
+/* Remove aggressive global right-margin reset to preserve centering (e.g., margin: 0 auto) */
+/* Previously forcing margin-right: 0 globally caused items to align right instead of center. */
 
 /* Navigation should remain full width (already working) */
 .premium-navigation {
