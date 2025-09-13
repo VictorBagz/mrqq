@@ -221,17 +221,11 @@ html, body {
     }
     
     .brand-logo {
-        width: 40px;
-        height: 40px;
+        width: 160px;
+        height: auto;
     }
     
-    .brand-name {
-        font-size: 16px;
-    }
-    
-    .brand-tagline {
-        font-size: 10px;
-    }
+    /* brand text removed */
 }
 
 /* Mobile Portrait - up to 479px */

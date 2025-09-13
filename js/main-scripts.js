@@ -243,13 +243,19 @@ jQuery(document).ready(function($) {
             lastScrollTop = scrollTop;
         });
         
-        // Set body padding for fixed nav
-        $('body').css('padding-top', nav.outerHeight());
+        // Apply body padding only on desktop to avoid mobile gap
+        var setBodyPadding = function() {
+            var width = $(window).width();
+            if (width >= 1025) {
+                $('body').css('padding-top', nav.outerHeight());
+            } else {
+                $('body').css('padding-top', 0);
+            }
+        };
+        setBodyPadding();
         
         // Adjust on resize
-        $(window).resize(function() {
-            $('body').css('padding-top', nav.outerHeight());
-        });
+        $(window).resize(setBodyPadding);
     }
     
     // Force visibility of critical sections

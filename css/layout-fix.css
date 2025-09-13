@@ -122,39 +122,77 @@ section,
 
 /* ===== HERO SECTION NAVIGATION SPACING FIX ===== */
 
-/* Hero section starts exactly where navigation ends */
-.mobile-hero-section {
-    margin-top: 70px !important; /* Default navigation height */
+/* Remove gap between navigation and hero section - hero starts right at navigation edge */
+.mobile-hero-section,
+.service-hero {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
-/* Responsive navigation spacing adjustments - exact heights */
+/* Ensure hero section accounts for fixed navigation height */
+.service-hero {
+    position: relative;
+    top: 0;
+    z-index: 1; /* Keep below navigation which has z-index: 1000 */
+}
+
+/* Override any default margins on main content area */
+#Content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Ensure sections start immediately after navigation */
+.sections_group {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* Navigation remains fixed and visible above hero content */
+.premium-navigation {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+}
+
+/* All screen sizes - zero gap between navigation and hero */
 @media screen and (max-width: 479px) {
-    .mobile-hero-section {
-        margin-top: 60px !important; /* Mobile navigation height */
+    .mobile-hero-section,
+    .service-hero {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .mobile-hero-section {
-        margin-top: 60px !important; /* Mobile landscape navigation height */
+    .mobile-hero-section,
+    .service-hero {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .mobile-hero-section {
-        margin-top: 70px !important; /* Tablet navigation height */
+    .mobile-hero-section,
+    .service-hero {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
 @media screen and (min-width: 1025px) {
-    .mobile-hero-section {
-        margin-top: 80px !important; /* Desktop navigation height */
+    .mobile-hero-section,
+    .service-hero {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
-/* Landscape orientation fix */
+/* Landscape orientation - maintain zero gap */
 @media screen and (orientation: landscape) and (max-height: 600px) {
-    .mobile-hero-section {
+    .mobile-hero-section,
+    .service-hero {
         margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }

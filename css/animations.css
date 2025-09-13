@@ -1,3 +1,19 @@
+/* CRITICAL VIDEO VISIBILITY FIX */
+.modern-videos-section,
+.modern-videos-section *,
+.video-card,
+.video-wrapper,
+.video-wrapper iframe {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    transform: none !important;
+}
+
+.videos-grid {
+    display: grid !important;
+}
+
 /* Animation Styles */
 
 @keyframes fadeIn {

@@ -1,3 +1,19 @@
+// IMMEDIATE VIDEO VISIBILITY FIX
+const forceVideoVisibility = () => {
+    const videoElements = document.querySelectorAll('.modern-videos-section, .video-card, .video-wrapper, .video-wrapper iframe');
+    videoElements.forEach(el => {
+        el.style.setProperty('opacity', '1', 'important');
+        el.style.setProperty('visibility', 'visible', 'important');
+        el.style.setProperty('display', 'block', 'important');
+        el.style.setProperty('transform', 'none', 'important');
+    });
+};
+
+// Run immediately
+forceVideoVisibility();
+// Run after DOM loads
+document.addEventListener('DOMContentLoaded', forceVideoVisibility);
+
 // Scroll Animation System
 class ScrollAnimations {
     constructor() {
@@ -79,7 +95,6 @@ class ScrollAnimations {
     observeElements() {
         // Select elements to animate
         const selectors = [
-            '.mobile-hero-section',
             '.mobile-services-section',
             '.service-item',
             '.our-works-section',
@@ -88,7 +103,6 @@ class ScrollAnimations {
             'section[class*="mcb-section"]',
             '.footer-column',
             '.slide',
-            'iframe',
             'h1, h2, h3, h4',
             '.button'
         ];
@@ -174,7 +188,7 @@ class ParallaxEffects {
 
     setup() {
         // Select elements for parallax effect
-        this.elements = document.querySelectorAll('.parallax-section, .mobile-hero-section, .our-works-section');
+        this.elements = document.querySelectorAll('.parallax-section, .our-works-section');
         
         if (this.elements.length > 0) {
             this.bindEvents();
